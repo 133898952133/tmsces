@@ -210,7 +210,7 @@ const questions = [
         text: '请听以下音频，这是什么动物的叫声？',
         media: {
             type: 'audio',
-            src: 'mp3/Love.mp3'
+            src: 'mp3/Love.MP3'
         },
         options: [
             { id: 'a', text: '猫' },
