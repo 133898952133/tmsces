@@ -599,6 +599,10 @@ function updateProgress() {
 // 上一题
 function goToPreviousQuestion() {
     if (currentQuestionIndex > 0) {
+        // 播放音频
+        const audio = new Audio('d:\\htmml\\mp3\\hhh.mp3');
+        audio.play().catch(err => console.log('音频播放失败:', err));
+        
         currentQuestionIndex--;
         showCurrentQuestion();
     }
@@ -607,6 +611,10 @@ function goToPreviousQuestion() {
 // 下一题
 function goToNextQuestion() {
     if (currentQuestionIndex < filteredQuestions.length - 1) {
+        // 播放音频
+        const audio = new Audio('d:\\htmml\\mp3\\hhh.mp3');
+        audio.play().catch(err => console.log('音频播放失败:', err));
+        
         currentQuestionIndex++;
         showCurrentQuestion();
     }
